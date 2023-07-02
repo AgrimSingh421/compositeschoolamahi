@@ -185,7 +185,7 @@ div.addapost form div.form-input textarea {
 .card-text {
   display: -webkit-box;
   overflow: hidden;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
 
