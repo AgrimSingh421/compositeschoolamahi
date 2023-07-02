@@ -185,7 +185,7 @@ div.addapost form div.form-input textarea {
 .card-text {
   display: -webkit-box;
   overflow: hidden;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
 }
 
@@ -209,6 +209,10 @@ div.addapost form div.form-input textarea {
   .card {
     width: 80%;
     height: 37.5rem;
+  }
+
+  .card-text {
+    -webkit-line-clamp: 8;
   }
 
   .navbar ul.links {
