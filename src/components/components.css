@@ -1,0 +1,224 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar ul.links {
+  display: flex;
+  background-color: lightcoral;
+  width: 100%;
+}
+
+.navbar ul.images {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: yellow;
+  position: relative;
+}
+
+.navbar ul.images .img1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  left: 0;
+}
+
+.navbar ul.images .img2 {
+  height: 100px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.navbar ul.images .img3 {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+}
+
+.navbar ul.links li {
+  list-style: none;
+  margin-right: 16px;
+}
+
+.navbar ul.links li.school-name {
+  margin-right: auto;
+}
+
+.navbar ul.links li a {
+  color: black;
+  font-size: 25px;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+.navbar ul.links button {
+  background-color: lightcoral;
+  border: none !important;
+  outline: none !important;
+  font-size: 25px;
+}
+
+.register,
+.login,
+.addapost {
+  margin-top: 30px;
+}
+
+.register form div.form-input input,
+.login form div.form-input input,
+.addapost form div.form-input input,
+.post form div.form-input textarea,
+.addapost form div.form-input textarea,
+.post form div.form-input input {
+  border: none;
+  border-bottom: 2px solid yellow;
+  outline: none !important;
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 18px;
+  padding: 3px 10px;
+}
+.register button,
+.login button,
+.addapost button,
+.post button {
+  outline: none !important;
+  border: 1px solid white;
+  font-size: 20px;
+  padding: 8px 13px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.home {
+  display: flex;
+}
+
+.links-div {
+  width: 30%;
+  height: 100vh;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.posts-div {
+  width: 40%;
+  height: 100vh;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.gallery-div {
+  width: 30%;
+  height: 100vh;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.gallery img {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.home .links-div .link1 {
+  width: 70%;
+  padding: 15px 25px;
+  background-color: red;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 15px auto;
+  text-decoration: none;
+  font-size: 25px;
+  transition: 0.5s;
+}
+
+.home .links-div .link1:hover {
+  background-color: white;
+  color: red;
+  border-color: red;
+}
+
+.home .links-div .link2 {
+  width: 70%;
+  padding: 15px 25px;
+  background-color: blue;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 15px auto;
+  text-decoration: none;
+  font-size: 25px;
+  transition: 0.5s;
+}
+
+.home .links-div .link2:hover {
+  background-color: white;
+  color: blue;
+  border-color: blue;
+}
+
+.card {
+  margin: 15px auto;
+  width: 75%;
+  height: 33rem;
+  margin-bottom: 30px;
+}
+
+div.post form div.form-input textarea,
+div.addapost form div.form-input textarea {
+  outline: none !important;
+}
+
+.card-text {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.comments .comment {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .links-div,
+  .posts-div,
+  .gallery-div {
+    width: 95%;
+  }
+
+  .card {
+    width: 80%;
+    height: 37.5rem;
+  }
+
+  .navbar ul.links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar ul.links li.school-name {
+    margin-right: 0;
+    text-align: center;
+  }
+}
